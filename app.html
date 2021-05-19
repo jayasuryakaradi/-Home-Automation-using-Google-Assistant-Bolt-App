@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bolt IoT Platform</title>
+        <script type="text/javascript" src="https://cloud.boltiot.com/static/js/boltCommands.js"></script>
+        <script>
+        setKey('{{ApiKey}}','{{Name}}');
+        </script>
+        <style>
+            .onbutton{ 
+                background-color: #4CAF50;
+                border:none;
+                border-radius: 30px;
+                color: white;
+                padding: 20px 47px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                margin: 4px 2px;
+                cursor: pointer;
+            }
+            .offbutton{
+                background-color: red;
+                border:none;
+                border-radius: 30px;
+                color: white;
+                padding: 20px 47px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 20px;
+                margin: 4px 2px;
+                cursor: pointer;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <center>
+            <h3>Room: 1</h3>
+        <button class="onbutton" onclick="digitalWrite(0, 'HIGH');">ON</button>
+        <button class="offbutton" onclick="digitalWrite(0, 'LOW');">OFF</button>
+        <br><br>
+        <h3>Room: 2</h3>
+        <button class="onbutton" onclick="digitalWrite(1, 'HIGH');">ON</button>
+        <button class="offbutton"onclick="digitalWrite(1, 'LOW');">OFF</button>
+        </center>
+    </body>
+</html>
